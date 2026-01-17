@@ -2,7 +2,7 @@
 
 ## 🛠 Used technologies
 * Java 21
-* Spring Boot 4.0.1
+* Spring Boot
 * PostgreSQL (Docker)
 * Flyway
 * MapStruct
@@ -20,11 +20,11 @@ docker-compose up -d
 * Endpoint: /api/reservations
 
 #### Body (JSON):
- {
-  "roomId": 1,
- "customerName": "Jan Novák",
- "startTime": "2024-02-01T10:00:00",
- "endTime": "2024-02-01T12:00:00"
+ {<br>
+  &emsp;"roomId": 1,<br>
+ &emsp;"customerName": "Jan Novák",<br>
+ &emsp;"startTime": "2024-02-01T10:00:00",<br>
+ &emsp;"endTime": "2024-02-01T12:00:00"<br>
  }
 
 #### Return codes:
@@ -35,14 +35,14 @@ docker-compose up -d
 * Endpoint: /api/reservations
 
 #### Response (JSON):
-[
-   {
-    "id": 1,
-    "roomId": 1,
-    "customerName": "Jan Novák",
-    "startTime": "2024-02-01T10:00:00",
-    "endTime": "2024-02-01T12:00:00"
-   }
+[<br>
+   &emsp;{<br>
+    &emsp;&emsp;"id": 1,<br>
+    &emsp;&emsp;"roomId": 1,<br>
+    &emsp;&emsp;"customerName": "Jan Novák",<br>
+    &emsp;&emsp;"startTime": "2024-02-01T10:00:00",<br>
+    &emsp;&emsp;"endTime": "2024-02-01T12:00:00"<br>
+   &emsp;}<br>
 ]
 #### Return codes:
 * 200 OK
