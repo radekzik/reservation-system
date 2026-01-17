@@ -15,31 +15,33 @@ docker-compose up -d
 ## 📡 API Endpoints
 
 * Base URL: http://localhost:8080
-* Create reservation (POST)
+  
+### Create reservation (POST)
 * Endpoint: /api/reservations
-* 
+
 ### Body (JSON):
-{
-  "roomId": 1,
-  "customerName": "Jan Novák",
-  "startTime": "2024-02-01T10:00:00",
-  "endTime": "2024-02-01T12:00:00"
-}
+ # {
+ #  "roomId": 1,
+ #  "customerName": "Jan Novák",
+ #  "startTime": "2024-02-01T10:00:00",
+ #  "endTime": "2024-02-01T12:00:00"
+ # }
 
 ### Return codes:
-* 201 Created - Úspěšně vytvořeno
-* 409 Conflict - Místnost je v daném čase obsazena
+* 201 Created - Successfully created
+* 409 Conflict - The room is occupied at the given time.
   
-* Seznam rezervací (GET)
+### List of reservations (GET)
 * Endpoint: /api/reservations
 
 ### Response (JSON):
-  {
-    "id": 1,
-    "roomId": 1,
-    "customerName": "Jan Novák",
-    "startTime": "2024-02-01T10:00:00",
-    "endTime": "2024-02-01T12:00:00"
-  }
-Return codes:
+  # {
+  #  "id": 1,
+  #  "roomId": 1,
+  #  "customerName": "Jan Novák",
+  #  "startTime": "2024-02-01T10:00:00",
+  #  "endTime": "2024-02-01T12:00:00"
+  # }
+  
+### Return codes:
 * 200 OK
