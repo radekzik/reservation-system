@@ -10,7 +10,6 @@ public interface RoomMapper {
 
     RoomDto toDto(Room entity);
 
-    // Tady přidáme ignore, protože seznam rezervací z DTO nechodí
     @Mapping(target = "reservations", ignore = true)
     Room toEntity(RoomDto dto);
 }
