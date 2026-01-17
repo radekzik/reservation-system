@@ -27,7 +27,7 @@ docker-compose up -d
  "endTime": "2024-02-01T12:00:00"
  }
 
-### Return codes:
+#### Return codes:
 * 201 Created - Successfully created
 * 409 Conflict - The room is occupied at the given time
   
@@ -43,5 +43,5 @@ docker-compose up -d
     "endTime": "2024-02-01T12:00:00"
    }
   
-### Return codes:
+#### Return codes:
 * 200 OK
