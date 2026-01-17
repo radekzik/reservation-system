@@ -1,8 +1,8 @@
 # Java Reservation System
 
 ## 🛠 Used technologies
-* Java 17
-* Spring Boot 3.4
+* Java 21
+* Spring Boot 4.0.1
 * PostgreSQL (Docker)
 * Flyway
 * MapStruct
