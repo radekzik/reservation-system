@@ -19,13 +19,13 @@ docker-compose up -d
 ### Create reservation (POST)
 * Endpoint: /api/reservations
 
-### Body (JSON):
- # {
- #  "roomId": 1,
- #  "customerName": "Jan Novák",
- #  "startTime": "2024-02-01T10:00:00",
- #  "endTime": "2024-02-01T12:00:00"
- # }
+#### Body (JSON):
+ {
+  "roomId": 1,
+ "customerName": "Jan Novák",
+ "startTime": "2024-02-01T10:00:00",
+ "endTime": "2024-02-01T12:00:00"
+ }
 
 ### Return codes:
 * 201 Created - Successfully created
@@ -34,14 +34,14 @@ docker-compose up -d
 ### List of reservations (GET)
 * Endpoint: /api/reservations
 
-### Response (JSON):
-  # {
-  #  "id": 1,
-  #  "roomId": 1,
-  #  "customerName": "Jan Novák",
-  #  "startTime": "2024-02-01T10:00:00",
-  #  "endTime": "2024-02-01T12:00:00"
-  # }
+#### Response (JSON):
+   {
+    "id": 1,
+    "roomId": 1,
+    "customerName": "Jan Novák",
+    "startTime": "2024-02-01T10:00:00",
+    "endTime": "2024-02-01T12:00:00"
+   }
   
 ### Return codes:
 * 200 OK
