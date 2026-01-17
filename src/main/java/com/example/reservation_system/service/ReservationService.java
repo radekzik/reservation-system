@@ -36,6 +36,7 @@ public class ReservationService {
     public ReservationDto createReservation(ReservationDto dto) {
         log.info("Attempting to create reservation for room ID: {}", dto.roomId());
 
+
         Room room = roomRepository.findById(dto.roomId())
                 .orElseThrow(() -> new ResourceNotFoundException("Room not found with ID: " + dto.roomId()));
 
@@ -47,7 +48,6 @@ public class ReservationService {
             log.warn("Reservation conflict for room: {}", room.getName());
             throw new ConflictException("Room is already occupied for the selected time.");
         }
-
 
         Reservation reservation = reservationMapper.toEntity(dto);
         reservation.setRoom(room);

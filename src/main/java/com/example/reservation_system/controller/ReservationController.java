@@ -23,7 +23,6 @@ public class ReservationController {
 
     @PostMapping
     public ResponseEntity<ReservationDto> create(@RequestBody ReservationDto dto) {
-        // Vracíme status 201 Created
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(reservationService.createReservation(dto));
     }
