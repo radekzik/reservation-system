@@ -29,7 +29,7 @@ docker-compose up -d
 
 ### Return codes:
 * 201 Created - Successfully created
-* 409 Conflict - The room is occupied at the given time.
+* 409 Conflict - The room is occupied at the given time
   
 ### List of reservations (GET)
 * Endpoint: /api/reservations
