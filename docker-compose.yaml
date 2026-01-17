@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: reservation_db
+    environment:
+      POSTGRES_DB: reservation_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
